@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Ensure this path is correct -->
+  </head>
+  <body>
+    <h1>Weather Information Service</h1>
+    <form action="/" method="POST">
+      <label for="city">Enter City Name:</label>
+      <input type="text" id="city" name="city" required />
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <% if (error) { %>
+    <p class="error-message"><%= error %></p>
+    <% } else if (weather) { %>
+    <div class="weather-info">
+      <h2>Weather in <%= weather.location.name %>:</h2>
+      <p>Temperature: <%= weather.current.temperature %>°C</p>
+      <p>Weather Description: <%= weather.current.weather_descriptions[0] %></p>
+      <p>Wind Speed: <%= weather.current.wind_speed %> km/h</p>
+    </div>
+    <% } %>
+  </body>
+</html>
