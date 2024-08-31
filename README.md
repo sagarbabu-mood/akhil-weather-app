@@ -14,4 +14,4 @@ The Weather Information Service is a Node.js application that provides real-time
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/weather-info-service.git
+   git clone https://github.com/akhilbhumireddy/weather-info-service.git
