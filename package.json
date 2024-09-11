@@ -1,1 +1,17 @@
-
+{
+  "name": "weather-info-service",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo 'No build step defined'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
